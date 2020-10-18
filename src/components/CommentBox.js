@@ -5,6 +5,9 @@ import * as actions from '../actions'
 function CommentBox(props) {
     const [comment, setComment] = useState('')
 
+
+
+
     const handleChange = (event) => {
         setComment(event.target.value)
     }
@@ -29,5 +32,7 @@ function CommentBox(props) {
         </div>
     )
 }
+
+
 
 export default connect(null, actions)(CommentBox);
